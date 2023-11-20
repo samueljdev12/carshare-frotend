@@ -1,0 +1,194 @@
+/* Fill out the page */
+#root {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+main {
+   flex-grow: 1;
+}
+
+/* Home page css */
+
+.proces-container{
+   padding: 2rem 0 4rem;
+}
+
+.scroll{
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   cursor: pointer;
+   font-size: 1.2rem;
+   padding: 1rem;
+   border-radius: 1rem;
+   z-index: 3;
+}
+
+.scroll:active{
+   background-color: #168670;
+}
+
+.scroll-icon{
+   width: 3rem;
+   --bs-text-opacity: 1;
+   color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity));
+}
+
+.scroll-icon:active{
+   color: azure !important;
+}
+
+/*b loader css */
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 9999; /* Ensure the overlay is above other elements */
+}
+
+
+
+/* Home page css */
+
+#form-self{
+    width: 50vw;
+    margin: 0 auto;
+    
+}
+
+/* #form{
+   background-color: #ffffff;
+} */
+.about-container{
+   padding: 5rem;
+}
+
+.main-bg-color{
+   background-color: #1abc9c;
+}
+
+.testimonials{
+   padding: 5rem;
+}
+
+.brand-logo{
+   display: inline-block;
+   width: 5rem;
+   height: auto;
+}
+
+.modal{
+   display: none;
+   position: relative; /* Stay in place */
+   z-index: 200; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+   padding: 0 .5rem;
+}
+
+.modal-content {
+   background-color: #fff;
+   margin: 15% auto; /* 15% from the top and centered horizontally */
+   padding: 20px;
+   border: 1px solid #888;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   text-align: center;
+   height: 20%;
+
+}
+
+/* disable button on booking page for an <Link> tag*/
+btn.disabled, btn:disabled fieldset:disabled .btn{
+   color: var(--bs-btn-disabled-color);
+   pointer-events: none;
+   background-color: var(--bs-btn-disabled-bg);
+   border-color: var(--bs-btn-disabled-border-color);
+   opacity: var(--bs-btn-disabled-opacity);
+}
+
+/* The Close Button */
+.close {
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 5px 20px;
+   margin: .5rem;
+   cursor: pointer;
+   background-color: #f44336;
+}
+
+/* Close button hover effect */
+.close:hover {
+   background-color: #f44336;
+   color: white;
+}
+
+/* account */
+.account{
+   height: 100vh;
+}
+
+.con-booking{
+   height: 80vh;
+}
+
+
+@media screen and (max-width: 700px) {
+   #form-self{
+    width: 80vw;
+   }
+   .about-container{
+      padding: 2rem;
+   }
+
+   .testimonials{
+      padding: 3rem;
+   }
+   
+  
+  }
+
+  .payment-container {
+   display: flex;
+   flex-direction: column;
+   gap: 15px; /* Spacing between card input and buttons */
+   width: 100%;
+   max-width: 400px; 
+   margin: 0 auto;
+   padding: 5rem 0;
+}
+
+.card-element-container {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   padding: 15px;
+   background-color: #f9f9f9;
+}
+
+.card-element {
+   width: 100%;
+}
+
+.buttons-container {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.btn-secondary {
+   background-color: #ccc;
+}
+
+  
